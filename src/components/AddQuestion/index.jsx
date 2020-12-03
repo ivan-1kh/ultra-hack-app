@@ -1,5 +1,15 @@
 import React from "react";
+import "./style.css";
 
 export default (props) => {
-    return <span>This is home</span>;
+    return <div className="questionContainer">
+        <input></input>
+        <input></input>
+        <input></input>
+        <input></input>
+        <input></input>
+        <input></input>
+        <input></input>
+        <input></input>
+    </div>;
 };
