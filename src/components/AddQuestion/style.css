@@ -6,3 +6,21 @@
     padding: 20px;
     border: solid black 1px;
 }
+
+.Question {
+    border-style: solid;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 350px !important;
+}
+
+.form-control {
+    padding: 1px;
+    margin: 2px;
+    height: 40px !important;
+}
+
+.form-group {
+    margin-bottom: 10px !important;
+}
