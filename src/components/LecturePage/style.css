@@ -1,3 +1,7 @@
 .container {
-    width: 2000px !important;
+    width: 1500px !important;
+}
+
+.answerButton {
+    cursor: pointer;
 }
