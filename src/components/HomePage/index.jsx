@@ -180,7 +180,16 @@ export default (props) => {
                                                 <div className='b-video'>
                                                     <div className='v-img'>
                                                         <a href='single-video-tabs.html'>
-                                                            <img src='images/video1-1.png' alt='' />
+                                                            <img
+                                                                src='/Screenshot_2.png'
+                                                                alt=''
+                                                                style={{
+                                                                    width: "270px",
+                                                                    height: "170px",
+                                                                    border: "solid 1px black",
+                                                                    borderRadius: "5px",
+                                                                }}
+                                                            />
                                                         </a>
                                                         <div className='time'>3:50</div>
                                                     </div>
@@ -201,7 +210,16 @@ export default (props) => {
                                                 <div className='b-video'>
                                                     <div className='v-img'>
                                                         <a href='single-video-tabs.html'>
-                                                            <img src='images/video1-1.png' alt='' />
+                                                            <img
+                                                                src='/Screenshot_3.png'
+                                                                alt=''
+                                                                style={{
+                                                                    width: "270px",
+                                                                    height: "170px",
+                                                                    border: "solid 1px black",
+                                                                    borderRadius: "5px",
+                                                                }}
+                                                            />
                                                         </a>
                                                         <div className='time'>3:50</div>
                                                     </div>
@@ -222,7 +240,16 @@ export default (props) => {
                                                 <div className='b-video'>
                                                     <div className='v-img'>
                                                         <a href='single-video-tabs.html'>
-                                                            <img src='images/video1-1.png' alt='' />
+                                                            <img
+                                                                src='/Screenshot_4.png'
+                                                                alt=''
+                                                                style={{
+                                                                    width: "270px",
+                                                                    height: "170px",
+                                                                    border: "solid 1px black",
+                                                                    borderRadius: "5px",
+                                                                }}
+                                                            />
                                                         </a>
                                                         <div className='time'>3:50</div>
                                                     </div>
@@ -243,7 +270,16 @@ export default (props) => {
                                                 <div className='b-video'>
                                                     <div className='v-img'>
                                                         <a href='single-video-tabs.html'>
-                                                            <img src='images/video1-1.png' alt='' />
+                                                            <img
+                                                                src='/Screenshot_5.png'
+                                                                alt=''
+                                                                style={{
+                                                                    width: "270px",
+                                                                    height: "170px",
+                                                                    border: "solid 1px black",
+                                                                    borderRadius: "5px",
+                                                                }}
+                                                            />
                                                         </a>
                                                         <div className='time'>3:50</div>
                                                     </div>
@@ -264,7 +300,16 @@ export default (props) => {
                                                 <div className='b-video'>
                                                     <div className='v-img'>
                                                         <a href='single-video-tabs.html'>
-                                                            <img src='images/video1-1.png' alt='' />
+                                                            <img
+                                                                src='/Screenshot_6.png'
+                                                                alt=''
+                                                                style={{
+                                                                    width: "270px",
+                                                                    height: "170px",
+                                                                    border: "solid 1px black",
+                                                                    borderRadius: "5px",
+                                                                }}
+                                                            />
                                                         </a>
                                                         <div className='time'>3:50</div>
                                                     </div>
@@ -285,7 +330,16 @@ export default (props) => {
                                                 <div className='b-video'>
                                                     <div className='v-img'>
                                                         <a href='single-video-tabs.html'>
-                                                            <img src='images/video1-2.png' alt='' />
+                                                            <img
+                                                                src='/Screenshot_7.png'
+                                                                alt=''
+                                                                style={{
+                                                                    width: "270px",
+                                                                    height: "170px",
+                                                                    border: "solid 1px black",
+                                                                    borderRadius: "5px",
+                                                                }}
+                                                            />
                                                         </a>
                                                         <div className='time'>15:19</div>
                                                     </div>
@@ -306,7 +360,16 @@ export default (props) => {
                                                 <div className='b-video'>
                                                     <div className='v-img'>
                                                         <a href='single-video-tabs.html'>
-                                                            <img src='images/video1-3.png' alt='' />
+                                                            <img
+                                                                src='/Screenshot_8.png'
+                                                                alt=''
+                                                                style={{
+                                                                    width: "270px",
+                                                                    height: "170px",
+                                                                    border: "solid 1px black",
+                                                                    borderRadius: "5px",
+                                                                }}
+                                                            />
                                                         </a>
                                                         <div className='time'>4:23</div>
                                                     </div>
@@ -327,7 +390,16 @@ export default (props) => {
                                                 <div className='b-video'>
                                                     <div className='v-img'>
                                                         <a href='single-video-tabs.html'>
-                                                            <img src='images/video1-4.png' alt='' />
+                                                            <img
+                                                                src='/Screenshot_1.png'
+                                                                alt=''
+                                                                style={{
+                                                                    width: "270px",
+                                                                    height: "170px",
+                                                                    border: "solid 1px black",
+                                                                    borderRadius: "5px",
+                                                                }}
+                                                            />
                                                         </a>
                                                         <div className='time'>7:18</div>
                                                     </div>

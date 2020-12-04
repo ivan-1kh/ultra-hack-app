@@ -3,13 +3,7 @@ import AddQuestion from "../AddQuestion";
 import "./style.css";
 
 export default (props) => {
-    const [questions, setQuestions] = React.useState([<AddQuestion />]);
-
-    const handleClick = (e) => {
-        var fileInput = document.querySelector("#file-upload");
-        var fileUrl = window.URL.createObjectURL(fileInput.files[0]);
-        document.querySelector("#video-container").setAttribute("src", fileUrl);
-    };
+    const [questions, setQuestions] = React.useState([]);
 
     return (
         <html lang='en'>
@@ -108,13 +102,14 @@ export default (props) => {
                                     <div className='col-lg-12'>
                                         <div className='form-group'>
                                             <div className='mainContainer'>
-                                                <input id='file-upload' type='file' onChange={handleClick}></input>
                                                 <video
                                                     controls
                                                     id='video-container'
                                                     width='1200'
                                                     height='400'
                                                     type='video/mp4'
+                                                    src='/lecture.mp4'
+                                                    poster='/Screenshot_1.png'
                                                 />
                                                 <div id='questions' className='questions'>
                                                     {questions.map((item) => item)}
@@ -122,7 +117,10 @@ export default (props) => {
                                                         className='plus'
                                                         onClick={() => {
                                                             setQuestions((prev) => {
-                                                                return prev.concat([<AddQuestion />]);
+                                                                let video = document.querySelector("#video-container");
+                                                                return prev.concat([
+                                                                    <AddQuestion time={video.currentTime} />,
+                                                                ]);
                                                             });
                                                         }}
                                                     >

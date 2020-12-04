@@ -1,6 +1,10 @@
 import React from "react";
 
 export default (props) => {
+    const handleClick = (e) => {
+        window.location = "/uploading";
+    };
+
     return (
         <html lang='en'>
             <head>
@@ -108,7 +112,9 @@ export default (props) => {
                                     <p className='u-text1'>Select Video files to upload</p>
                                     <p className='u-text2'>or drag and drop video files</p>
                                     <form action='/uploading' method='get'>
-                                        <button className='btn btn-primary u-btn'>Upload Video</button>
+                                        <button className='btn btn-primary u-btn'>
+                                            <input id='file-upload' type='file' onChange={handleClick}></input>
+                                        </button>
                                     </form>
                                 </div>
                             </div>

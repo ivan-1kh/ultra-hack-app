@@ -91,7 +91,7 @@ export default (props) => {
                 </div>
                 <div class='content-wrapper upload-page edit-page'>
                     <div class='container-fluid u-details-wrap'>
-                        {/* <div class='row'>
+                        <div class='row'>
                             <div class='container'>
                                 <div class='row'>
                                     <div class='col-lg-12'>
@@ -99,7 +99,14 @@ export default (props) => {
                                             <div class='row'>
                                                 <div class='col-lg-12 ud-caption'>Upload Details</div>
                                                 <div class='col-lg-2'>
-                                                    <div class='imgplace'></div>
+                                                    <img
+                                                        src='/Screenshot_1.png'
+                                                        style={{
+                                                            width: "180px",
+                                                            height: "140px",
+                                                            borderRadius: "5px",
+                                                        }}
+                                                    />
                                                 </div>
                                                 <div class='col-lg-10'>
                                                     <div class='u-title'>Video Title</div>
@@ -130,7 +137,7 @@ export default (props) => {
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                         <br />
                         <br />
                         <br />

@@ -2,6 +2,25 @@ import React from "react";
 import "./style.css";
 
 export default (props) => {
+    const [startAt, setStartAt] = React.useState(null);
+
+    React.useEffect(() => {
+        let str = "";
+
+        str += parseInt(props.time / 60).toString();
+        str += ":";
+        if (props.time % 60 < 10) {
+            str += "0";
+        }
+        str += parseInt(props.time % 60).toString();
+
+        setStartAt(str);
+    });
+
+    const closeQuestion = (e) => {
+        e.target.parentElement.parentElement.remove();
+    };
+
     return (
         <div className='Question'>
             <div className='row'>
@@ -42,9 +61,10 @@ export default (props) => {
                 <div className='col-lg-6'>
                     <div className='form-group'>
                         <label for='e4'>To:</label>
-                        <input type='text' className='form-control' id='e4' placeholder='End at' />
+                        <input type='text' className='form-control' id='e4' placeholder='End at' value={startAt} />
                     </div>
                 </div>
+                <img src='/close-icon.png' className='exit-icon' onClick={closeQuestion} />
             </div>
         </div>
     );

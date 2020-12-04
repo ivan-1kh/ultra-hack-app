@@ -28,3 +28,10 @@
 .row label {
     margin-bottom: 0;
 }
+
+.exit-icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+}
