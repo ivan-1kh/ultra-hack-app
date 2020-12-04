@@ -1,16 +1,6 @@
 import React from "react";
-import AddQuestion from "../AddQuestion";
-import "./style.css";
 
 export default (props) => {
-    const [questions, setQuestions] = React.useState([<AddQuestion />]);
-
-    const handleClick = (e) => {
-        var fileInput = document.querySelector("#file-upload");
-        var fileUrl = window.URL.createObjectURL(fileInput.files[0]);
-        document.querySelector("#video-container").setAttribute("src", fileUrl);
-    };
-
     return (
         <html lang='en'>
             <head>
@@ -20,7 +10,7 @@ export default (props) => {
                 <meta name='description' content='' />
                 <meta name='author' content='' />
                 <link rel='icon' href='favicon.png' />
-                <title>Courses Video | Upload Edit Video Page</title>
+                <title>Course Video | Upload Video Page</title>
                 <link href='bootstrap/css/bootstrap.min.css' rel='stylesheet' />
                 <link href='css/style.css' rel='stylesheet' />
                 <link href='css/font-awesome.min.css' rel='stylesheet' />
@@ -34,13 +24,24 @@ export default (props) => {
             <body className='light'>
                 <div className='container-fluid'>
                     <div className='row'>
+                        <div className='btn-color-toggle'>
+                            <img src='images/icon_bulb_light.png' alt='' />
+                        </div>
                         <div className='navbar-container'>
                             <div className='container'>
                                 <div className='row'>
+                                    <div className='col-lg-1 col-sm-2 col-xs-2'>
+                                        <a className='navbar-brand' href='index.html'>
+                                            <img src='images/logo.svg' alt='Project name' className='logo' />
+                                        </a>
+                                    </div>
                                     <div className='col-lg-3 col-sm-10 col-xs-10'>
                                         <ul className='list-inline menu'>
                                             <li>
                                                 <a href='index.html'>Home</a>
+                                            </li>
+                                            <li>
+                                                <a href='Index.html'>Courses</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -76,9 +77,9 @@ export default (props) => {
                                                     id='dropdownMenu1'
                                                     data-toggle='dropdown'
                                                     aria-haspopup='true'
-                                                    aria-expanded='true'
+                                                    aria-expanded='false'
                                                 >
-                                                    Mhemmad <span className='caret'></span>
+                                                    <span className='caret'></span>
                                                 </button>
                                                 <ul className='dropdown-menu'>
                                                     <li>
@@ -90,63 +91,48 @@ export default (props) => {
                                                 </ul>
                                             </div>
                                         </div>
+                                        <div className='clearfix'></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='container-fluid'>
-                    <div className='row'></div>
-                </div>
-
-                <div className='content-wrapper upload-page edit-page'>
-                    <div className='container-fluid u-details-wrap'>
-                        <div className='row'>
-                            <div className='container'>
-                                <div className='row'>
-                                    <div className='col-lg-12'>
-                                        <div className='form-group'>
-                                            <div className='mainContainer'>
-                                                <input id='file-upload' type='file' onChange={handleClick}></input>
-                                                <video
-                                                    controls
-                                                    id='video-container'
-                                                    width='1200'
-                                                    height='400'
-                                                    type='video/mp4'
-                                                />
-                                                <div id='questions' className='questions'>
-                                                    {questions.map((item) => item)}
-                                                    <div
-                                                        className='plus'
-                                                        onClick={() => {
-                                                            setQuestions((prev) => {
-                                                                return prev.concat([<AddQuestion />]);
-                                                            });
-                                                        }}
-                                                    >
-                                                        <img className='plusIcon' src='./plus.png' />
-                                                    </div>
-                                                </div>
-                                                <div class='u-area'>
-                                                    <form action='/lecture' method='get'>
-                                                        <button class='btn btn-primary u-btn'>Save</button>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div className='container-fluid'></div>
+                <div className='content-wrapper'>
                     <div className='container'>
                         <div className='row'>
-                            <div className='col-lg-4 '></div>
+                            <div className='col-lg-12 upload-page'>
+                                <div className='u-area'>
+                                    <i className='cv cvicon-cv-upload-video'></i>
+                                    <p className='u-text1'>Select Video files to upload</p>
+                                    <p className='u-text2'>or drag and drop video files</p>
+                                    <form action='/uploading' method='get'>
+                                        <button className='btn btn-primary u-btn'>Upload Video</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <footer>
+                    <div className='container-fluid'>
+                        <div className='row'>
+                            <div className='container padding-def'>
+                                <div className='col-lg-7  col-sm-7 col-xs-12'>
+                                    <div className='f-links'>
+                                        <ul className='list-inline'>
+                                            <li>
+                                                <a href='#'>UltraHack 2020</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className='delimiter'></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
                 <script src='js/jquery.min.js'></script>
                 <script src='bootstrap/js/bootstrap.min.js'></script>
                 <script src='js/custom.js'></script>
