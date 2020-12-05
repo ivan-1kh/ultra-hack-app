@@ -41,6 +41,35 @@ const lectureQuestionData = [
 export default (props) => {
     const [currentQuestion, setCurrentQuestion] = React.useState();
 
+    var subtitle;
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        //subtitle.style.color = '#f00';
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
+
+    const [modal2IsOpen, set2IsOpen] = React.useState(false);
+    function openModal2() {
+        set2IsOpen(true);
+    }
+
+    function afterOpenModal2() {
+        // references are now sync'd and can be accessed.
+        //subtitle.style.color = '#f00';
+    }
+
+    function closeModal2() {
+        set2IsOpen(false);
+    }
+
     React.useEffect(() => {
         setInterval(() => {
             let video = document.querySelector("#mainVideo");
@@ -62,11 +91,15 @@ export default (props) => {
             setTimeout(function () {
                 closeModal();
                 document.querySelector("#mainVideo").play();
-            }, 3000);
+            }, 1500);
         } else {
             document.querySelector("#mainVideo").currentTime = currentQuestion.startAt;
             setCurrentQuestion(null);
-            document.querySelector("#mainVideo").play();
+            openModal2();
+            setTimeout(function () {
+                closeModal2();
+                document.querySelector("#mainVideo").play();
+            }, 1500);
         }
     };
 
@@ -78,11 +111,15 @@ export default (props) => {
             setTimeout(function () {
                 closeModal();
                 document.querySelector("#mainVideo").play();
-            }, 3000);
+            }, 1500);
         } else {
             document.querySelector("#mainVideo").currentTime = currentQuestion.startAt;
             setCurrentQuestion(null);
-            document.querySelector("#mainVideo").play();
+            openModal2();
+            setTimeout(function () {
+                closeModal2();
+                document.querySelector("#mainVideo").play();
+            }, 1500);
         }
     };
 
@@ -94,11 +131,15 @@ export default (props) => {
             setTimeout(function () {
                 closeModal();
                 document.querySelector("#mainVideo").play();
-            }, 3000);
+            }, 1500);
         } else {
             document.querySelector("#mainVideo").currentTime = currentQuestion.startAt;
             setCurrentQuestion(null);
-            document.querySelector("#mainVideo").play();
+            openModal2();
+            setTimeout(function () {
+                closeModal2();
+                document.querySelector("#mainVideo").play();
+            }, 1500);
         }
     };
 
@@ -110,28 +151,17 @@ export default (props) => {
             setTimeout(function () {
                 closeModal();
                 document.querySelector("#mainVideo").play();
-            }, 3000);
+            }, 1500);
         } else {
             document.querySelector("#mainVideo").currentTime = currentQuestion.startAt;
             setCurrentQuestion(null);
-            document.querySelector("#mainVideo").play();
+            openModal2();
+            setTimeout(function () {
+                closeModal2();
+                document.querySelector("#mainVideo").play();
+            }, 1500);
         }
     };
-
-    var subtitle;
-    const [modalIsOpen, setIsOpen] = React.useState(false);
-    function openModal() {
-        setIsOpen(true);
-    }
-
-    function afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        //subtitle.style.color = '#f00';
-    }
-
-    function closeModal() {
-        setIsOpen(false);
-    }
 
     return (
         <html lang='en'>
@@ -167,7 +197,7 @@ export default (props) => {
                                     <div className='col-lg-3 col-sm-10 col-xs-10'>
                                         <ul className='list-inline menu'>
                                             <li>
-                                                <a href='index.html'>Home</a>
+                                                <a href='/'>Home</a>
                                             </li>
                                             <li>
                                                 <a href='index.html'>Courses</a>
@@ -308,7 +338,7 @@ export default (props) => {
                                                 allowFullScreen
                                             ></iframe>
                                         </div>
-                                        <div className='modal-footer'>
+                                        {/* <div className='modal-footer'>
                                             <button
                                                 type='button'
                                                 onClick={closeModal}
@@ -317,7 +347,40 @@ export default (props) => {
                                             >
                                                 Continue
                                             </button>
+                                        </div> */}
+                                    </Modal>
+                                    <Modal
+                                        isOpen={modal2IsOpen}
+                                        onAfterOpen={afterOpenModal2}
+                                        onRequestClose={closeModal2}
+                                        style={customStyles}
+                                    >
+                                        <div className='modal-header'>
+                                            <button type='button' className='close' onClick={closeModal}>
+                                                &times;
+                                            </button>
+                                            <h4 className='modal-title'>Incorrect answer</h4>
                                         </div>
+                                        <div className='modal-body'>
+                                            <iframe
+                                                src='https://giphy.com/embed/W5qyPxP1CVLFVsmlsl'
+                                                width='250'
+                                                height='250'
+                                                frameBorder='0'
+                                                class='giphy-embed'
+                                                allowFullScreen
+                                            ></iframe>
+                                        </div>
+                                        {/* <div className='modal-footer'>
+                                            <button
+                                                type='button'
+                                                onClick={closeModal}
+                                                className='btn btn-default'
+                                                data-dismiss='modal'
+                                            >
+                                                Continue
+                                            </button>
+                                        </div> */}
                                     </Modal>
                                 </div>
 

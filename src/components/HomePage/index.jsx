@@ -179,7 +179,7 @@ export default (props) => {
                                             <div className='col-lg-3 col-sm-6 videoitem'>
                                                 <div className='b-video'>
                                                     <div className='v-img'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             <img
                                                                 src='/Screenshot_2.png'
                                                                 alt=''
@@ -194,7 +194,7 @@ export default (props) => {
                                                         <div className='time'>3:50</div>
                                                     </div>
                                                     <div className='v-desc'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             Course Aligibra 1: Matrix rank - Elias Renawi
                                                         </a>
                                                     </div>
@@ -209,7 +209,7 @@ export default (props) => {
                                             <div className='col-lg-3 col-sm-6 videoitem'>
                                                 <div className='b-video'>
                                                     <div className='v-img'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             <img
                                                                 src='/Screenshot_3.png'
                                                                 alt=''
@@ -224,7 +224,7 @@ export default (props) => {
                                                         <div className='time'>3:50</div>
                                                     </div>
                                                     <div className='v-desc'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             Course Aligibra 1: Matrix rank - Elias Renawi
                                                         </a>
                                                     </div>
@@ -239,7 +239,7 @@ export default (props) => {
                                             <div className='col-lg-3 col-sm-6 videoitem'>
                                                 <div className='b-video'>
                                                     <div className='v-img'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             <img
                                                                 src='/Screenshot_4.png'
                                                                 alt=''
@@ -254,7 +254,7 @@ export default (props) => {
                                                         <div className='time'>3:50</div>
                                                     </div>
                                                     <div className='v-desc'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             Course Aligibra 1: Matrix rank - Elias Renawi
                                                         </a>
                                                     </div>
@@ -269,7 +269,7 @@ export default (props) => {
                                             <div className='col-lg-3 col-sm-6 videoitem'>
                                                 <div className='b-video'>
                                                     <div className='v-img'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             <img
                                                                 src='/Screenshot_5.png'
                                                                 alt=''
@@ -284,7 +284,7 @@ export default (props) => {
                                                         <div className='time'>3:50</div>
                                                     </div>
                                                     <div className='v-desc'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             Course Aligibra 1: Matrix rank - Elias Renawi
                                                         </a>
                                                     </div>
@@ -299,7 +299,7 @@ export default (props) => {
                                             <div className='col-lg-3 col-sm-6 videoitem'>
                                                 <div className='b-video'>
                                                     <div className='v-img'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             <img
                                                                 src='/Screenshot_6.png'
                                                                 alt=''
@@ -314,7 +314,7 @@ export default (props) => {
                                                         <div className='time'>3:50</div>
                                                     </div>
                                                     <div className='v-desc'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             Course Aligibra 1: Matrix rank - Elias Renawi
                                                         </a>
                                                     </div>
@@ -329,7 +329,7 @@ export default (props) => {
                                             <div className='col-lg-3 col-sm-6 videoitem'>
                                                 <div className='b-video'>
                                                     <div className='v-img'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             <img
                                                                 src='/Screenshot_7.png'
                                                                 alt=''
@@ -344,7 +344,7 @@ export default (props) => {
                                                         <div className='time'>15:19</div>
                                                     </div>
                                                     <div className='v-desc'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             Course Hidva 1: Function Integral - Mhemmad Abdalla
                                                         </a>
                                                     </div>
@@ -359,7 +359,7 @@ export default (props) => {
                                             <div className='col-lg-3 col-sm-6 videoitem'>
                                                 <div className='b-video'>
                                                     <div className='v-img'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             <img
                                                                 src='/Screenshot_8.png'
                                                                 alt=''
@@ -374,9 +374,7 @@ export default (props) => {
                                                         <div className='time'>4:23</div>
                                                     </div>
                                                     <div className='v-desc'>
-                                                        <a href='single-video-tabs.html'>
-                                                            Course Hidva 2: 3D Integral - Sohaib
-                                                        </a>
+                                                        <a href='/lecture'>Course Hidva 2: 3D Integral - Sohaib</a>
                                                     </div>
                                                     <div className='v-views'>
                                                         2,729,347 views .
@@ -389,7 +387,7 @@ export default (props) => {
                                             <div className='col-lg-3 col-sm-6 videoitem'>
                                                 <div className='b-video'>
                                                     <div className='v-img'>
-                                                        <a href='single-video-tabs.html'>
+                                                        <a href='/lecture'>
                                                             <img
                                                                 src='/Screenshot_1.png'
                                                                 alt=''
@@ -404,9 +402,7 @@ export default (props) => {
                                                         <div className='time'>7:18</div>
                                                     </div>
                                                     <div className='v-desc'>
-                                                        <a href='single-video-tabs.html'>
-                                                            Course OOP: Class Constractor - Fakhry
-                                                        </a>
+                                                        <a href='/lecture'>Course OOP: Class Constractor - Fakhry</a>
                                                     </div>
                                                     <div className='v-views'>
                                                         7,239,852 views.
