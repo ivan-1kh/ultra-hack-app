@@ -47,10 +47,6 @@ export default (props) => {
         setIsOpen(true);
     }
 
-    function whateverWhatever() {
-        console.log("test");
-    }
-
     function afterOpenModal() {
         // references are now sync'd and can be accessed.
         //subtitle.style.color = '#f00';
